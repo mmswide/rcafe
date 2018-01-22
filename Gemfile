@@ -38,7 +38,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'simple_form'
 gem 'simple_enum'
-gem 'carrierwave'
+gem 'carrierwave'   # Upload images
+gem 'mini_magick'   # Justify the image size
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
