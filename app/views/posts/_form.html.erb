@@ -13,7 +13,7 @@
 
   <div class="form-actions">
     <%= f.button :submit %>
-    <%= link_to 'Show', @post, class: 'btn btn-default' if @post.persisted? %>
-    <%= link_to 'List', posts_path, class: 'btn btn-default' %>
+    <%= link_to 'Show', (@bulletin.present? ? [@post.bulletin, @post] : @post), class: 'btn btn-default' if @post.persisted? %>
+    <%= link_to 'List', (@bulletin.present? ? bulletin_posts_path(@bulletin) : posts_path), class: 'btn btn-default' %>
   </div>
 <% end %>

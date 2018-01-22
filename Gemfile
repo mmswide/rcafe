@@ -41,6 +41,7 @@ gem 'simple_enum'
 gem 'carrierwave'   # Upload images
 gem 'mini_magick'   # Justify the image size
 gem 'font-awesome-rails'
+gem 'bootstrap_flash_messages', '~> 1.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
